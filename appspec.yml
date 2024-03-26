@@ -3,6 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/html/
+    overwrite: true   # Enable overwrite feature
 hooks:
   BeforeInstall:
     - location: scripts/clear_cache.sh
