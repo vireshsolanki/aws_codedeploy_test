@@ -9,10 +9,10 @@ hooks:
     - location: scripts/clear_cache.sh
       timeout: 300
       runas: root
-  AfterInstall:
-    - location: scripts/change_permissions.sh
-      timeout: 300
-      runas: root
+  # AfterInstall:
+  #   - location: scripts/change_permissions.sh
+  #     timeout: 300
+  #     runas: root
   ApplicationStart:
     - location: scripts/restart_nginx.sh
       timeout: 300
